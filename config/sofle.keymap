@@ -6,13 +6,13 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
-#define ZMK_MOUSE_DEFAULT_MOVE_VAL 800  // 600
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 #define U_MS_U &mmv MOVE_UP
 #define U_MS_D &mmv MOVE_DOWN
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
+#undefine ZMK_MOUSE_DEFAULT_MOVE_VAL
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 800  //  600
+#undefine ZMK_MOUSE_DEFAULT_SCRL_VAL
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
 / {
@@ -56,9 +56,9 @@
         layer_1 {
             bindings = <
 &kp ESC     &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7            &kp F8          &kp F9     &kp F10    &kp F11
-&kp TAB     &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp Y            &kp UP            &kp INSERT      &kp LBKT   &kp RBKT   &kp F12
+&kp TAB     &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp Y           &kp UP            &kp INSERT      &kp LBKT   &kp RBKT   &kp F12
 &trans      &trans           &trans          &kp DEL          &kp PAGE_UP      &mkp MB5           &mmv MOVE_LEFT   &kp LEFT         &kp DOWN          &kp RIGHT       &kp RIGHT  &trans     &trans
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &kp PAGE_DOWN    &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRD  &rgb_ug RGBJ_BRI  &kp INSERT      &trans     &trans     &trans
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &kp PAGE_DOWN    &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp INSERT      &trans     &trans     &trans
 &kp C_MUTE  &trans           &trans          &mo 2            &trans           &trans             &mkp LCLK        &trans           &trans            &kp LANG_HANJA  &trans     &C_PP
             >;
 
