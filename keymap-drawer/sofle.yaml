@@ -55,8 +55,8 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - LAYER1
   - $$mdi:printer-outline$$
@@ -64,7 +64,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - LANG HANGEUL
   - {t: \, s: '|'}
-  - '&key_repeat'
+  - $$mdi:keyboard-esc$$
   LAYER1:
   - $$mdi:keyboard-esc$$
   - F1
